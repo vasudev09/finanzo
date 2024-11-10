@@ -1,0 +1,126 @@
+.rContainer {
+    margin-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 15px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.rContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.rTop {
+  margin-top: 20px;
+}
+.rInput {
+    display:block;
+    position: relative;
+}
+.percentTop {
+  position: absolute;
+  font-size: 14px;
+}
+.pTop1 {
+  bottom: 66px;
+  left: 225px;
+}
+.pTop2 {
+  bottom: 15px;
+  left: 235px;
+}
+.pTop3 {
+  left: 235px;
+}
+.rInputBox{
+    font-family: 'Poppins';
+    height: 43px;
+    width: 260px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    margin: 4px 0px;
+}
+
+.lab1  {
+  color: gray;
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:16px;
+  bottom:69px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.lab2  {
+  color: gray;
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:16px;
+  bottom: 18px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus + label,input:valid + label	{
+  transform: translateY(-20px);
+  background-color: #fff;
+  padding: 0px 2px;
+  font-size:11px;
+  color: gray;
+}
+
+
+.rButton {
+    font-family: 'Figtree';
+    height: 40px;
+    width: 100px;
+    outline: none; 
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    background: var(--blueColor);
+    margin-left: 55px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+        opacity: 1;
+        transform: translateY(0);
+        transition-duration: .35s;
+      }
+    
+      &:hover:after {
+        opacity: .5;
+      }
+      
+      &:active {
+        box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+        transform: translateY(2px);
+        transition-duration: .35s;
+      }
+      
+      &:active:after {
+        opacity: 1;
+      }
+}
